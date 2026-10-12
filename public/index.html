@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEO Performance Monitor</title>
+  <link rel="stylesheet" href="style.css?v=20261009-no-social" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="#" class="brand">
+      <span class="brand-mark">S</span>
+      <span>SEO<span class="brand-light">Monitor</span></span>
+    </a>
+    <span class="status"><span class="status-dot"></span> Performance Workspace</span>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SEO PERFORMANCE MONITORING SYSTEM</p>
+        <h1>Understand your website.<br /><span>Improve your visibility.</span></h1>
+        <p class="hero-description">
+          Audit your website, find SEO issues, analyse keywords, and track
+          your previous audit results from one simple dashboard.
+        </p>
+      </div>
+      <div class="hero-visual">
+        <img
+          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80"
+          alt="Website analytics dashboard on a laptop"
+        />
+        <div class="visual-label">
+          <span class="status-dot"></span>
+          Website insights, simplified
+        </div>
+      </div>
+    </section>
+
+    <section class="audit-section panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / WEBSITE ANALYSIS</p>
+          <h2>Run an SEO audit</h2>
+          <p class="muted">Enter a public website URL to check its basic SEO health.</p>
+        </div>
+        <span class="section-icon">↗</span>
+      </div>
+
+      <form id="auditForm" class="audit-form">
+        <label for="websiteUrl">Website URL</label>
+        <div class="input-row">
+          <input
+            id="websiteUrl"
+            type="text"
+            placeholder="https://example.com"
+            required
+          />
+          <button id="auditButton" type="submit">Analyse website <span>→</span></button>
+        </div>
+        <p class="helper-text">Use a public website that you have permission to analyse.</p>
+      </form>
+
+      <div id="auditMessage" class="message hidden" role="status"></div>
+      <div id="auditResults" class="results hidden"></div>
+    </section>
+
+    <section class="tools-grid">
+      <article class="panel tool-card">
+        <div class="tool-top">
+          <span class="tool-number">02</span>
+          <span class="section-icon">⌕</span>
+        </div>
+        <h2>Keyword analyser</h2>
+        <p class="muted">Discover frequently used keywords in your text and understand its content focus.</p>
+        <form id="keywordForm">
+          <label for="keywordText">Paste your content</label>
+          <textarea id="keywordText" rows="5" placeholder="Paste a paragraph or website content here..." required></textarea>
+          <button type="submit" class="button-secondary">Analyse keywords →</button>
+        </form>
+        <div id="keywordMessage" class="message hidden" role="status"></div>
+        <div id="keywordResults" class="keyword-results hidden"></div>
+      </article>
+
+      <article class="panel tool-card history-card">
+        <div class="tool-top">
+          <span class="tool-number">03</span>
+          <span class="section-icon">◷</span>
+        </div>
+        <h2>Audit history</h2>
+        <p class="muted">Review your latest saved website audits and compare their basic SEO scores.</p>
+        <button id="historyButton" type="button" class="button-secondary">Load audit history →</button>
+        <div id="historyMessage" class="message hidden" role="status"></div>
+        <div id="historyResults" class="history-results"></div>
+      </article>
+    </section>
+
+    <footer>
+      <span>SEO Performance Monitoring System</span>
+      <span>by Aryan Mishra</span>
+    </footer>
+  </main>
+
+  <script src="script.js?v=20261009-no-social"></script>
+</body>
+</html>
